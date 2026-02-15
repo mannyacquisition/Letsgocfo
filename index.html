@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Accepting 40% Service Margins — Your MSP Should Be at 65%+ | Let's Go CFO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s cubic-bezier(0.4, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(102, 126, 234, 0.9);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+    
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm fixed w-full top-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">Let's Go CFO</span>
+                    <span class="ml-3 text-xs font-semibold text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full">MSP Financial Experts</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#problem" class="text-slate-700 hover:text-indigo-600 transition font-medium">The Margin Leak</a>
+                    <a href="#proof" class="text-slate-700 hover:text-indigo-600 transition font-medium">MSP Results</a>
+                    <a href="#audit" class="text-slate-700 hover:text-indigo-600 transition font-medium">Free Audit</a>
+                </div>
+                <a href="#audit" class="bg-indigo-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">
+                    Find My Leak
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 opacity-40"></div>
+        <div class="max-w-7xl mx-auto relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center mb-6 bg-red-100 border border-red-300 text-red-800 px-4 py-2 rounded-full">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-semibold text-sm">MSPs doing 40% service margins when best-in-class hit 65%+</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-6">
+                        Your MSP Is <span class="gradient-text">Leaking 25 Points</span> of Margin Every Month
+                    </h1>
+                    
+                    <p class="text-xl text-slate-600 mb-6 leading-relaxed font-medium">
+                        Most managed service providers think 40-45% service margins are "normal." Meanwhile, <strong class="text-slate-900">25 margin points</strong> leak through bloated PSA/RMM tool sprawl, sub-70% utilization rates, and SG&A costs your bookkeeper can't even categorize correctly.
+                    </p>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-red-500 mb-8">
+                        <p class="text-lg text-slate-700">
+                            <strong class="text-slate-900">The brutal truth:</strong> If you're looking at 60-day-old QuickBooks data with a part-time bookkeeper and filing taxes in September, you're flying blind while your best margins evaporate in real-time.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        <a href="#audit" class="pulse-glow bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-indigo-700 transition text-center shadow-xl transform hover:scale-105">
+                            🔍 Find My Margin Leak (Free)
+                        </a>
+                        <a href="#vsl" class="bg-white border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-indigo-600 hover:text-indigo-600 transition text-center">
+                            Watch How We Fix This
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center space-x-6 text-sm text-slate-600">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-medium">15-min call</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-medium">No P&L required</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-medium">Zero sales pitch</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Proof Cards -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">⚡ Real MSP Owners:</h3>
+                        <p class="text-sm text-slate-600">These firms thought 40-42% was "good for MSPs"...</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-green-500 pl-4 bg-green-50 py-3 rounded-r-lg">
+                            <p class="text-slate-700 font-medium italic mb-2">"We found $47K/year bleeding through ConnectWise AND Autotask licenses nobody knew we still had after the merger. One 15-minute call."</p>
+                            <p class="text-sm text-slate-600">— Dallas MSP, $8M ARR</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4 bg-green-50 py-3 rounded-r-lg">
+                            <p class="text-slate-700 font-medium italic mb-2">"Thought 42% was normal. They showed me my senior techs were doing internal IT 18hrs/week instead of billable work. Fixed it. Now at 63% service margin."</p>
+                            <p class="text-sm text-slate-600">— Austin IT Consulting, $12M ARR</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4 bg-green-50 py-3 rounded-r-lg">
+                            <p class="text-slate-700 font-medium italic mb-2">"My utilization was 58%. Didn't even know we tracked that. They showed me the exact labor reallocation to hit 72%. Margins jumped 26 points in 90 days."</p>
+                            <p class="text-sm text-slate-600">— Denver Cybersecurity MSP, $5.5M ARR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VSL Section -->
+    <section id="vsl" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">The 25-Point Margin Leak Nobody's Tracking</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">Why MSPs unknowingly operate at 40% service margins when 65%+ is achievable—and the exact system we use to plug the leak</p>
+            </div>
+            
+            <!-- Video Placeholder -->
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%; height: 0;">
+                <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 to-purple-900 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <svg class="w-24 h-24 mx-auto mb-4 opacity-80" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
+                        </svg>
+                        <p class="text-2xl font-semibold">Your VSL Goes Here</p>
+                        <p class="text-sm mt-2 opacity-80">4-minute breakdown of where MSP margins leak</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <a href="#audit" class="inline-block bg-indigo-600 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-indigo-700 transition shadow-xl">
+                    Get My Free Margin Audit →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section - The 25-Point Leak -->
+    <section id="problem" class="py-20 bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-red-600 text-white px-6 py-2 rounded-full font-bold text-lg mb-4">
+                    THE 25-POINT SERVICE MARGIN LEAK
+                </div>
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Where Your MSP Margins Actually Go</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">Most IT firms think 40-42% is "normal" for managed services. Here's what best-in-class looks like—and where you're hemorrhaging margin points right now.</p>
+            </div>
+            
+            <!-- Visibility Gap Diagram -->
+            <div class="mb-16 bg-white rounded-2xl p-8 shadow-xl max-w-5xl mx-auto">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6 text-center">The 45-Day "Visibility Gap" That's Killing Your Margins</h3>
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-red-50 border-2 border-red-300 rounded-lg p-6 text-center">
+                        <p class="text-sm text-slate-600 mb-2">Transaction happens</p>
+                        <p class="text-3xl font-bold text-red-600">Day 1</p>
+                        <p class="text-xs text-slate-500 mt-2">You buy redundant software license</p>
+                    </div>
+                    <div class="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6 text-center">
+                        <p class="text-sm text-slate-600 mb-2">Bookkeeper "closes" books</p>
+                        <p class="text-3xl font-bold text-yellow-600">Day 45</p>
+                        <p class="text-xs text-slate-500 mt-2">Finally see it on P&L statement</p>
+                    </div>
+                    <div class="bg-green-50 border-2 border-green-400 rounded-lg p-6 text-center">
+                        <p class="text-sm text-slate-600 mb-2">With daily close</p>
+                        <p class="text-3xl font-bold text-green-600">Day 1</p>
+                        <p class="text-xs text-slate-500 mt-2">Catch it same-day, cancel immediately</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-100 border-l-4 border-yellow-600 p-4 rounded-r-lg">
+                    <p class="text-slate-700 font-semibold">In 45 days of "visibility gap," how many margin leaks already happened?</p>
+                    <p class="text-slate-600 mt-2">Redundant tools auto-renewed. Senior engineers stayed on internal projects instead of billable work. Marketing spend got mis-categorized. By the time you see last month's P&L, you've already bled thousands.</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Current State -->
+                <div class="bg-white rounded-xl p-8 shadow-lg border-4 border-red-500">
+                    <div class="flex items-center mb-6">
+                        <div class="text-red-600 text-5xl mr-4">😰</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Your Reality</h3>
+                            <p class="text-red-600 font-semibold">40-42% Service Margin</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-red-600 font-bold mr-3">❌</span>
+                            <p class="text-slate-700"><strong>Tool sprawl:</strong> Paying for Kaseya, Datto, AND SolarWinds because "we might need it someday"</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-600 font-bold mr-3">❌</span>
+                            <p class="text-slate-700"><strong>Utilization under 70%:</strong> L2/L3 techs spending 15+ hrs/week on non-billable internal work</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-600 font-bold mr-3">❌</span>
+                            <p class="text-slate-700"><strong>Hidden SG&A:</strong> Marketing buried in "office supplies," sales commissions as W-2 wages—nobody tracking real costs</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-600 font-bold mr-3">❌</span>
+                            <p class="text-slate-700"><strong>45-day-old data:</strong> Books "closed" mid-next-month = flying blind on today's margins</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-600 font-bold mr-3">❌</span>
+                            <p class="text-slate-700"><strong>September tax extensions:</strong> Reactive filing = missed proactive tax-saving opportunities all year</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Best in Class -->
+                <div class="bg-gradient-to-br from-green-500 to-emerald-600 text-white rounded-xl p-8 shadow-2xl transform hover:scale-105 transition">
+                    <div class="flex items-center mb-6">
+                        <div class="text-white text-5xl mr-4">🚀</div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Best-in-Class MSPs</h3>
+                            <p class="font-semibold text-green-100">65%+ Service Margin</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="font-bold mr-3">✓</span>
+                            <p><strong>Lean PSA/RMM stack:</strong> Only tools directly tied to margin improvement—tracked monthly</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="font-bold mr-3">✓</span>
+                            <p><strong>75%+ utilization:</strong> Labor costs locked at 30% of revenue with real-time utilization dashboards</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="font-bold mr-3">✓</span>
+                            <p><strong>SG&A transparency:</strong> Every dollar categorized correctly—marketing, sales, admin all capped and visible</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="font-bold mr-3">✓</span>
+                            <p><strong>24-hour data lag:</strong> Yesterday's transactions categorized this morning—catch leaks in real-time</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="font-bold mr-3">✓</span>
+                            <p><strong>January tax filing:</strong> Proactive planning all year = maximum deductions captured, zero extensions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-8 shadow-xl max-w-4xl mx-auto border-l-4 border-red-600">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">💰 The Math on a $5M MSP</h3>
+                <div class="grid md:grid-cols-2 gap-8 mb-6">
+                    <div>
+                        <p class="text-sm text-slate-600 mb-2">At 40% service margin:</p>
+                        <p class="text-3xl font-bold text-red-600">$2,000,000 gross profit</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-600 mb-2">At 65% service margin:</p>
+                        <p class="text-3xl font-bold text-green-600">$3,250,000 gross profit</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-100 border-l-4 border-yellow-600 p-4 rounded-r-lg">
+                    <p class="text-lg font-bold text-slate-900">That's $1.25M/year you're leaving on the table.</p>
+                    <p class="text-slate-700 mt-2">Every. Single. Year. And your bookkeeper closing books 45 days late can't tell you it's happening because they don't track utilization, bench costs, or MSP-specific KPIs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Find The Leak -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">How We Find Your 25 Margin Points</h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">The only CPA-led system built specifically for MSP financials. Here's what we catch that your bookkeeper can't even see.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-xl transition">
+                    <div class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">PSA/RMM Tool Sprawl Audit</h3>
+                    <p class="text-slate-600 mb-4">We pull every SaaS subscription and identify redundant licenses, overlapping RMM tools, and zombie PSA seats bleeding 5-12% of revenue.</p>
+                    <div class="bg-white rounded-lg p-4 text-sm text-slate-700 border-l-4 border-red-500">
+                        <strong>Real leak:</strong> $8M MSP paying for both Autotask AND ConnectWise after merger. Nobody consolidated. Cost: $4,200/month pure waste.
+                    </div>
+                </div>
+                
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-xl transition">
+                    <div class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Utilization Rate Analysis</h3>
+                    <p class="text-slate-600 mb-4">We measure where every billable hour goes. Most MSPs run 55-65% utilization when 75%+ is achievable without burning out techs.</p>
+                    <div class="bg-white rounded-lg p-4 text-sm text-slate-700 border-l-4 border-red-500">
+                        <strong>Real leak:</strong> Senior L3 engineers spending 18 hrs/week on internal IT instead of client billable. Cost: $94K/year in lost margin.
+                    </div>
+                </div>
+                
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-xl transition">
+                    <div class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">SG&A Mis-Categorization Fix</h3>
+                    <p class="text-slate-600 mb-4">Sales costs, marketing spend, admin overhead—your bookkeeper categorizes it wrong and your tax guy never questions it.</p>
+                    <div class="bg-white rounded-lg p-4 text-sm text-slate-700 border-l-4 border-red-500">
+                        <strong>Real leak:</strong> Marketing automation buried in "software licenses," sales commissions as payroll. Result: Invisible 18% SG&A bloat.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-indigo-900 to-purple-900 text-white rounded-2xl p-12 text-center">
+                <h3 class="text-3xl font-bold mb-4">Why Daily Close Matters for MSPs</h3>
+                <p class="text-xl mb-6 opacity-90">Your bookkeeper closes books on the 15th of next month. By then, that $4K redundant license already auto-renewed. That engineer already spent 72 hours on non-billable work. We're in your books EVERY DAY catching leaks before they cost thousands.</p>
+                <div class="flex justify-center gap-12 mt-8">
+                    <div>
+                        <p class="text-5xl font-bold mb-2 text-red-400">45</p>
+                        <p class="text-indigo-200">Days data lag (current)</p>
+                    </div>
+                    <div class="text-5xl">→</div>
+                    <div>
+                        <p class="text-5xl font-bold mb-2 text-green-400">24hrs</p>
+                        <p class="text-indigo-200">Data freshness (us)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="proof" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">MSPs We've Fixed</h2>
+                <p class="text-xl text-slate-600">Real service margin improvements from real MSPs who thought 40% was "normal"</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gradient-to-br from-green-600 to-emerald-700 text-white rounded-xl p-8 text-center shadow-xl transform hover:scale-105 transition">
+                    <div class="text-6xl font-bold mb-2">38% → 63%</div>
+                    <p class="text-xl mb-4">Service Margin Jump</p>
+                    <p class="text-sm opacity-90">Denver Cybersecurity MSP, $5.5M ARR</p>
+                    <div class="mt-4 pt-4 border-t border-white/30">
+                        <p class="text-xs">Audit found: Bloated bench (58% utilization), redundant security tool stack, SG&A mis-categorization</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-xl p-8 text-center shadow-xl transform hover:scale-105 transition">
+                    <div class="text-6xl font-bold mb-2">$47K</div>
+                    <p class="text-xl mb-4">Annual SaaS Waste</p>
+                    <p class="text-sm opacity-90">Dallas Managed IT, $8M ARR</p>
+                    <div class="mt-4 pt-4 border-t border-white/30">
+                        <p class="text-xs">Audit found: Double-paying ConnectWise + Autotask post-merger, unused Datto licenses, zombie HubSpot seats</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-600 to-pink-700 text-white rounded-xl p-8 text-center shadow-xl transform hover:scale-105 transition">
+                    <div class="text-6xl font-bold mb-2">$380K</div>
+                    <p class="text-xl mb-4">Left on Table Annually</p>
+                    <p class="text-sm opacity-90">Austin IT Consulting, $12M ARR</p>
+                    <div class="mt-4 pt-4 border-t border-white/30">
+                        <p class="text-xs">Audit found: 61% utilization (industry std 75%+), bloated bench costs, inefficient project staffing model</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="text-4xl mr-4">💼</div>
+                        <div>
+                            <div class="text-yellow-500 text-lg mb-2">★★★★★</div>
+                            <p class="text-slate-700 italic mb-4">
+                                "I was convinced 42% was just 'how MSPs work.' Their 15-minute audit showed $6K/month bleeding through redundant tools and engineers on non-billable work. We're at 61% now and filed January taxes for the first time in 8 years."
+                            </p>
+                            <p class="font-semibold text-slate-900">— Jake Martinez, CEO</p>
+                            <p class="text-sm text-slate-600">Phoenix Managed IT | $7.2M ARR</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="text-4xl mr-4">🚀</div>
+                        <div>
+                            <div class="text-yellow-500 text-lg mb-2">★★★★★</div>
+                            <p class="text-slate-700 italic mb-4">
+                                "Our bookkeeper said the books were 'clean.' They just moved money around. Let's Go found $22K/year our CPA missed in tax strategy plus another $41K operational waste from tool sprawl and bench inefficiency."
+                            </p>
+                            <p class="font-semibold text-slate-900">— Sarah Chen, Founder</p>
+                            <p class="text-sm text-slate-600">Austin Cloud Solutions | $4.8M ARR</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="text-4xl mr-4">📊</div>
+                        <div>
+                            <div class="text-yellow-500 text-lg mb-2">★★★★★</div>
+                            <p class="text-slate-700 italic mb-4">
+                                "The daily close changed everything. Used to wait 45 days to see if we were profitable. Now I know by Tuesday if Monday was good. Caught a $90K annual margin leak on new contract pricing before we signed."
+                            </p>
+                            <p class="font-semibold text-slate-900">— Michael Torres, Owner</p>
+                            <p class="text-sm text-slate-600">Denver IT Consulting | $9.1M ARR</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="text-4xl mr-4">✅</div>
+                        <div>
+                            <div class="text-yellow-500 text-lg mb-2">★★★★★</div>
+                            <p class="text-slate-700 italic mb-4">
+                                "About to hire a $140K controller. Let's Go costs a fraction and handles everything—daily bookkeeping to strategic tax planning. Plus they actually understand MSP KPIs like MRR, churn, EBITDA multiples, and utilization."
+                            </p>
+                            <p class="font-semibold text-slate-900">— David Kim, Managing Partner</p>
+                            <p class="text-sm text-slate-600">Seattle Cybersecurity MSP | $11.3M ARR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Margin Leak Audit Offer - Low Friction -->
+    <section id="audit" class="py-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-full font-bold text-lg mb-4">
+                    💰 THE "MARGIN LEAKAGE" AUDIT
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Find Exactly Where Your 25 Points Are Leaking</h2>
+                <p class="text-2xl mb-4 opacity-90">
+                    (For MSPs doing $1M-$30M revenue)
+                </p>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Your MSP is likely at 40-42% service margins when 65%+ is achievable. We'll find exactly where the 25 points leak—in 15 minutes.
+                </p>
+            </div>
+            
+            <div class="bg-white text-slate-900 rounded-2xl p-10 shadow-2xl mb-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">Here's What You Get (100% Free, Zero Friction):</h3>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 text-green-700 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">15-Minute PSA/RMM Tool Audit</h4>
+                            <p class="text-slate-600">
+                                Tell us your tech stack verbally—no spreadsheets needed. We identify redundant RMM tools, overlapping PSA licenses, and zombie SaaS subscriptions. Most MSPs discover $3-8K/month in pure waste.
+                            </p>
+                            <div class="mt-2 bg-yellow-50 border-l-4 border-yellow-500 p-3 text-sm text-slate-700">
+                                <strong>Real example:</strong> One $8M MSP had ConnectWise, Autotask, AND Kaseya simultaneously post-acquisition. Nobody consolidated. $4,200/month waste.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-green-100 text-green-700 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Utilization Rate Estimation</h4>
+                            <p class="text-slate-600">
+                                We estimate your utilization based on headcount and service model. Is it 58%? 72%? Industry best-practice is 75%+. Every 5 points below that is massive margin loss.
+                            </p>
+                            <div class="mt-2 bg-yellow-50 border-l-4 border-yellow-500 p-3 text-sm text-slate-700">
+                                <strong>Real example:</strong> Firm running 62% utilization didn't know. Fixed staffing mix to hit 74%. Added $280K/year gross profit.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-green-100 text-green-700 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Exact Dollar Amount You're Leaving Behind</h4>
+                            <p class="text-slate-600">
+                                No vague "you could improve" nonsense. We tell you: "You're leaving $X per month through Y and Z specific leaks." Walk away knowing the exact number and how to fix it.
+                            </p>
+                            <div class="mt-2 bg-green-50 border-l-4 border-green-500 p-3 text-sm text-slate-700">
+                                <strong>Zero sales pitch.</strong> We show the leak, explain the fix, you decide if you want our help.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 bg-indigo-50 rounded-xl p-6 border-2 border-indigo-600">
+                    <h4 class="text-xl font-bold text-indigo-900 mb-3">📋 What We Need (Minimal Prep):</h4>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-700">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Ballpark revenue & headcount</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>What PSA/RMM tools you use</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Rough idea of service margin (or we'll estimate)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>15 minutes on a call</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-indigo-900 font-semibold">
+                        <strong>No P&L required.</strong> If you have last month's P&L, great—bring it. If not, we'll estimate your leak based on your verbal answers. Zero prep homework.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Calendly Embed Placeholder -->
+            <div class="bg-white rounded-2xl p-8 shadow-2xl">
+                <div class="text-slate-900 mb-6 text-center">
+                    <p class="text-2xl font-bold mb-2">📅 Book Your Free Margin Audit</p>
+                    <p class="text-slate-600">Most MSPs find $20K-$80K/year in margin leaks in 15 minutes</p>
+                </div>
+                <!-- Replace this div with your Calendly embed code -->
+                <div class="bg-slate-100 rounded-lg p-12 text-slate-600 text-center">
+                    <p class="text-lg font-semibold mb-2">Insert Calendly Embed Here</p>
+                    <p class="text-sm">Replace with your Calendly inline widget</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center text-sm opacity-90">
+                <p>✓ No credit card • ✓ No obligation • ✓ No P&L required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us vs Controller -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Why MSPs Choose Us Over Hiring a Controller</h2>
+                <p class="text-xl text-slate-600">~80% the cost. 200% the expertise. Zero single-point-of-failure risk.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                        <span class="text-red-600 mr-3 text-3xl">✗</span> Hiring a Full-Time Controller
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-600">
+                            <p class="text-slate-700"><strong>$140K base + $45K benefits/taxes</strong> = $185K all-in cost minimum</p>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-600">
+                            <p class="text-slate-700"><strong>$15-30K recruiter fee</strong> before you know if they're any good</p>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-600">
+                            <p class="text-slate-700"><strong>Single point of failure:</strong> Sick days, vacation, maternity leave = your books stall</p>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-600">
+                            <p class="text-slate-700"><strong>Limited MSP expertise:</strong> Knows QuickBooks, doesn't know PSA API data pulls or utilization KPIs</p>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-600">
+                            <p class="text-slate-700"><strong>Knowledge loss risk:</strong> When they quit, so does all institutional context</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                        <span class="text-green-600 mr-3 text-3xl">✓</span> Let's Go CFO
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                            <p class="text-slate-700"><strong>Flat monthly fee:</strong> ~80% of FTE cost, unlimited comms, zero surprise bills</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                            <p class="text-slate-700"><strong>Zero recruiting fees:</strong> Live in 30 days, not 3+ months of interviewing</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                            <p class="text-slate-700"><strong>Team continuity:</strong> Nobody "quits." SOPs ensure zero knowledge loss, ever.</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                            <p class="text-slate-700"><strong>Deep MSP mastery:</strong> We pull PSA API data, track utilization, know MRR/churn/EBITDA multiples</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                            <p class="text-slate-700"><strong>Always current:</strong> Daily close = see today's margins today, not in 45 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-indigo-900 to-purple-900 text-white rounded-2xl p-12 text-center">
+                <h3 class="text-3xl font-bold mb-4">The Math Is Simple</h3>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-8">
+                    <div>
+                        <p class="text-sm opacity-80 mb-2">Full-Time Controller</p>
+                        <p class="text-4xl font-bold text-red-400">$185K/year</p>
+                        <p class="text-sm mt-2 opacity-70">+ recruiting + turnover risk</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <span class="text-5xl">vs</span>
+                    </div>
+                    <div>
+                        <p class="text-sm opacity-80 mb-2">Let's Go CFO</p>
+                        <p class="text-4xl font-bold text-green-400">~80% less</p>
+                        <p class="text-sm mt-2 opacity-70">+ MSP expertise + zero risk</p>
+                    </div>
+                </div>
+                <p class="text-xl mt-8 opacity-90">Same daily support. Better MSP-specific insights. None of the headaches.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">MSP Owner Questions</h2>
+            </div>
+            
+            <div class="space-y-6">
+                <details class="bg-white rounded-lg p-6 group shadow-md hover:shadow-lg transition">
+                    <summary class="text-xl font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        <span>Is this actually free? What's the catch?</span>
+                        <svg class="w-6 h-6 text-slate-400 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-slate-600">
+                        Yes, 100% free with zero obligation. We show you where margin is leaking. You decide if you want help plugging it. About 60% of MSPs who do the audit work with us—because when we show you're bleeding $40K/year on tool sprawl and inefficient utilization, the ROI becomes obvious.
+                    </p>
+                </details>
+                
+                <details class="bg-white rounded-lg p-6 group shadow-md hover:shadow-lg transition">
+                    <summary class="text-xl font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        <span>Do you actually understand MSP businesses or just generic accounting?</span>
+                        <svg class="w-6 h-6 text-slate-400 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-slate-600">
+                        We focus specifically on MSPs/IT firms because your model is unique. We understand MRR vs project revenue, churn metrics, utilization rates, bench costs, PSA/RMM tool economics, and the difference between break-fix and managed services margins. Your typical CPA treats you like every other "service business." We know the KPIs that matter for MSPs.
+                    </p>
+                </details>
+                
+                <details class="bg-white rounded-lg p-6 group shadow-md hover:shadow-lg transition">
+                    <summary class="text-xl font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        <span>Won't I lose control without someone in my office?</span>
+                        <svg class="w-6 h-6 text-slate-400 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-slate-600">
+                        You gain control. Most owners with in-house staff have "false control"—someone at a desk, but books 3+ weeks behind. With us, you have real-time dashboards showing your service margin at 2 PM on Tuesday. You see utilization rates, bench costs, and cash position daily. More visibility than you've ever had with a W-2 hire perpetually playing catch-up.
+                    </p>
+                </details>
+                
+                <details class="bg-white rounded-lg p-6 group shadow-md hover:shadow-lg transition">
+                    <summary class="text-xl font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        <span>What if my books are a complete mess?</span>
+                        <svg class="w-6 h-6 text-slate-400 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-slate-600">
+                        Most MSPs come to us with messy books. We specialize in taking 3-month-behind chaos and turning it into a real-time financial engine within 30 days. The audit works even with messy books—we can spot margin leaks from high-level data (headcount, revenue, tool stack). Cleanup happens during onboarding.
+                    </p>
+                </details>
+                
+                <details class="bg-white rounded-lg p-6 group shadow-md hover:shadow-lg transition">
+                    <summary class="text-xl font-bold text-slate-900 cursor-pointer flex justify-between items-center">
+                        <span>Why daily close instead of monthly? Isn't that overkill?</span>
+                        <svg class="w-6 h-6 text-slate-400 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-slate-600">
+                        If you're making a $200K hiring decision or pricing a $500K enterprise contract this week, do you want last month's margin data or today's? The daily close catches tool auto-renewals before they charge. Spots engineers on non-billable work before 80 hours are wasted. It's financial night-vision, not a rearview mirror.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Your MSP Shouldn't Accept 40% Service Margins</h2>
+            <p class="text-2xl mb-8 opacity-90">
+                The 25 margin points you're losing every month compound to hundreds of thousands per year.
+            </p>
+            <p class="text-xl mb-12 opacity-80">
+                Most MSP owners don't know it's happening because they're looking at 45-day-old data from a bookkeeper who doesn't track utilization, bench costs, or MSP KPIs.
+            </p>
+            
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-12 border border-white/20">
+                <h3 class="text-2xl font-bold mb-6">On Your Free 15-Minute Audit:</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-left">
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="opacity-90">Which PSA/RMM licenses are pure waste</span>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="opacity-90">Where utilization is costing you margin</span>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="opacity-90">Hidden SG&A bloat your bookkeeper missed</span>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="opacity-90">Exact dollar amount left on table monthly</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#audit" class="inline-block bg-green-500 text-white px-12 py-5 rounded-xl font-bold text-2xl hover:bg-green-600 transition shadow-2xl transform hover:scale-105">
+                🔍 Book My Free Margin Audit
+            </a>
+            
+            <p class="mt-6 text-sm opacity-75">
+                Most MSPs find $20K-$80K/year in leaks in 15 minutes. Zero obligation. No P&L required.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">Let's Go CFO</h3>
+                    <p class="text-slate-400">
+                        The only CPA-led financial system built specifically for MSPs. Daily close, proactive tax strategy, and service margin optimization for $1M-$30M IT firms.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-slate-300">Quick Links</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#problem" class="hover:text-white transition">The Margin Leak</a></li>
+                        <li><a href="#proof" class="hover:text-white transition">MSP Results</a></li>
+                        <li><a href="#audit" class="hover:text-white transition">Free Margin Audit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-slate-300">Contact</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li>Email: david@letsgocfo.com</li>
+                        <li>Phone: (925) 457-4399</li>
+                        <li>Serving MSPs nationwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
+                <p>© 2025 Let's Go CFO. All Rights Reserved.</p>
+                <p class="mt-2">Let's Go CFO is a provider of back-office services, including bookkeeping, controller services, and CFO services. Let's Go CFO is not a public accounting firm and does not provide services that would require a license to practice public accountancy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
